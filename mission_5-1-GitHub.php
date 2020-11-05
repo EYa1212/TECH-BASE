@@ -98,7 +98,7 @@
 
         ?>
 
-        <h3>好きなものはなんですか。</h3>
+        <h3>今何をしたいですか？</h3>
 
         <form action="" method="post">
             <input type="text" name="na" placeholder="名前" value=<?php if(isset($ediNa)){echo $ediNa;}?>>
