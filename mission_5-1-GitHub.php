@@ -14,8 +14,6 @@
         $pdo=new PDO($dsn, $user, $pass, array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_WARNING));
 
         #テーブルの作成、項目は名前・コメント・パスワード・日付と時間
-        #AUTO_INCREMENT：データを追加した時にカラムに対して現在格納されている最大の数値に1を追加した数値を自動で格納
-        #PRIMARY　KEY：主キー。テーブルに格納されているデータを識別するための目印
         $sql="CREATE TABLE IF NOT EXISTS tb1"
         ."("
         ."id INT AUTO_INCREMENT PRIMARY KEY,"
@@ -98,7 +96,7 @@
 
         ?>
 
-        <h3>今何をしたいですか？</h3>
+        <h3>好きなものはなんですか。</h3>
 
         <form action="" method="post">
             <input type="text" name="na" placeholder="名前" value=<?php if(isset($ediNa)){echo $ediNa;}?>>
