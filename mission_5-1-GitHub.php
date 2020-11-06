@@ -64,7 +64,7 @@
             $stmt=$pdo->query($sql);
             $results=$stmt->fetchAll();
             foreach($results as $row){
-                if($row['id']==$_POST["delNo"] && $row['password']=$_POST["delPass"]){
+                if($row['id']==$_POST["delNo"] && $row['password']==$_POST["delPass"]){
                     $id=$_POST["delNo"];
                     $sql='delete from tb1 where id=:id';
                     $stmt=$pdo->prepare($sql);
